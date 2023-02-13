@@ -171,6 +171,25 @@
           width: 70%;
           height: 30%;
           display: block;
+          top:5%;
+          padding: 0;
+          // margin-left: 0;
+         }
+
+        .banner-info h2{
+          margin-bottom: 5px;
+          text-align: left;
+          margin-left: 0;
+          
+         }
+
+        .banner-info p {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          font-size: 11.5px;
+          text-align: left;
+          margin-left: 0;
+          
          }
 
          .banner-image {
@@ -191,12 +210,13 @@
         position: absolute;
         bottom: 450px;
         left: 50%;
+        top: 50%;
         transform: translateX(-50%);
       }
    
       .progress-bar {
         width: 70%;
-        height: 10px;
+        height: 2px;
         background-color: lightgrey;
         border-radius: 5px;
         position: absolute;
@@ -209,34 +229,38 @@
         height: 100%;
         width: 90%;
       }
-      
+
       .banner-controls {
-        width: 70%;
-        height: 20px;
         position: absolute;
-        bottom: 70px;
+        bottom: 45px;
+        right: 0px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        left: 45%;
-        transform: translateX(-50%);
+        margin-right: 15%;
+        padding: 0 0px;  
+      }
+
+      .previous-button,
+      .next-button {
+        display: flex;
+        top: 60%;
+        border-width: 0.1px;
+        border-style: inset;
+        color: var(--elewa-group-website-color);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
       }
       
-  
 
-  .previous-button {
-    order: 1;
-    margin-left: 0;
-  }
-
-.next-button {
-  order: 2;
-}
 
 .fa-arrow-left-long,
 .fa-arrow-right-long {
 color: var(--elewa-group-website-color);
-font-size: 20px;
+font-size: 10px;
 font-weight: lighter;
 cursor: pointer;
 background: none;
