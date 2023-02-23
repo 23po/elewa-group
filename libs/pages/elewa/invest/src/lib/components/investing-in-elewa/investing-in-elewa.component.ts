@@ -1,16 +1,27 @@
 import { Component, Input } from '@angular/core';
+import { ButtonsModule } from '@elewa-group/features/components/buttons';
+
 
 @Component({
   selector: 'elewa-group-investing-in-elewa',
   templateUrl: './investing-in-elewa.component.html',
   styleUrls: ['./investing-in-elewa.component.scss'],
 })
-export class InvestingInElewaComponent {
+export class InvestingInElewaComponent  {
 
-  @Input() imageURL = 'https://res.cloudinary.com/dyl3rncv3/image/upload/v1675690302/elewa-group-website/Images/f2b2ea6afc31e9720638da1bbd0d2d69_p58coq.png';
-  @Input() paragraphTexts : string[] = ["From time to time we offer investment opportuinties"];
-  @Input() titleText = 'Investing in Elewa NV';
-  @Input() imagePlacement = 'left';
-  @Input() backgroundColor = 'white';
+  @Input() imageURL = '';
+  @Input() paragraphTexts : string[] = [];
+  @Input() titleText = '';
+  @Input() imagePlacement = '';
+  @Input() backgroundColor = '';
 }
+
+  // imageURL = '';
+  //  paragraphTexts : ["You can use the git reset command to undo a git pull operation. The git reset command resets your repository to a particular point in its history. If you made changes to files before running git pull that you did not commit, those changes will be gone."];
+  //  titleText = '';
+  //  imagePlacement = '';
+  //  backgroundColor = '';
+
+
+
 

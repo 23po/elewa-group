@@ -7,10 +7,12 @@ import { InvestingInElewaComponent } from './components/investing-in-elewa/inves
 import { ElewaInvestDetailSectionComponent } from './components/elewa-invest-detail-section/elewa-invest-detail-section.component';
 import { ButtonsModule } from "@elewa-group/features/components/buttons"
 
+import {BannersModule} from "@elewa-group/features/components/banners"
+
 
 
 @NgModule({
-  imports: [CommonModule, InvestRoutingModule, ButtonsModule,],
+  imports: [CommonModule, InvestRoutingModule, BannersModule, ButtonsModule,],
   declarations: [InvestPageComponent, ElewaInvestDetailSectionComponent,  InvestingInElewaComponent,],
 })
 
